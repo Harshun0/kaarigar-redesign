@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Kaarigar</title>
+  <link rel="icon" href="/images/global/site-icon.png" />
+  <link rel="stylesheet" href="/css/transition.css" />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/globals.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
+</head>
+
+<body>
+  <div class="transition">
+    <div class="transition-overlay overlay-1"></div>
+    <div class="transition-overlay overlay-2"></div>
+    <div class="transition-overlay overlay-3"></div>
+    <div class="transition-overlay overlay-4"></div>
+    <div class="transition-overlay overlay-5"></div>
+  </div>
+  <div class="page contact-page">
+    <nav>
+      <div class="logo">
+        <div class="logo-container">
+          <a href="/"><img src="/images/global/logo.png" alt="Kaarigar" class="logo-img" /></a>
+        </div>
+      </div>
+    </nav>
+    <section class="contact trail-container">
+      <div class="floating-elements"></div>
+      <div class="contact-left">
+        <div class="contact-card-header-main">
+          <h1>Let's build something together</h1>
+          <p>
+            Got a project idea? Need a website, a mobile app or an AI chatbot for your business?
+            Tell us what you need and we'll get back to you.
+          </p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <p class="label">Project Inquiries</p>
+            <p><a href="mailto:karigarcustomercare@gmail.com" target="_blank">karigarcustomercare@gmail.com</a></p>
+          </div>
+          <div class="contact-info-item">
+            <p class="label">Quick Chat</p>
+            <p><a href="https://www.instagram.com/kaarigarhh/" target="_blank">@kaarigar</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <div class="form-header">
+          <h2>Get in Touch</h2>
+          <p>Tell us about your project and we'll take it from there</p>
+        </div>
+        <form class="contact-form" id="contactForm" action="/api/contact" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+              <label for="firstName">First Name</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+              <label for="lastName">Last Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+              <label for="phone">Mobile Number</label>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <select id="projectType" name="projectType" required>
+              <option value="">Select what you need</option>
+              <option value="website">Website Development</option>
+              <option value="mobileapp">Mobile Applications</option>
+              <option value="chatbot">AI Chatbots</option>
+              <option value="software">Custom Software</option>
+              <option value="uiux">UI/UX Design</option>
+              <option value="automation">Automation</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="projectType">What do you need?</label>
+          </div>
+          <div class="form-group full-width">
+            <textarea id="message" name="message"
+              placeholder="Tell us about your project..." required></textarea>
+            <label for="message">Project Details</label>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Message
+          </button>
+          <div class="success-message" id="successMessage">
+            <p>Thanks! Your message has been sent. We'll get back to you soon.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="/js/transition.js"></script>
+  <script type="module" src="/js/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "niranjan-nedumaran-portfolio",
+  "version": "1.0.0",
+  "description": "Niranjan Nedumaran's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "host": "vite --host"
+  },
+  "keywords": [],
+  "author": "Niranjan Nedumaran",
+  "license": "MIT",
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.3",
+    "mongodb": "^7.7.0",
+    "vite": "^6.3.5"
+  }
+}
