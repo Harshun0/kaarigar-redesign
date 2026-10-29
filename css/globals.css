@@ -197,3 +197,151 @@
       font-size: 3rem;
     }
   }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #25d366;
+    box-shadow: 6px 6px 0px 2px #000000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: translateY(-4px);
+  }
+
+  .whatsapp-float svg {
+    width: 34px;
+    height: 34px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    .whatsapp-float {
+      width: 48px;
+      height: 48px;
+      bottom: 16px;
+      right: 16px;
+    }
+
+    .whatsapp-float svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  /* all projects */
+  .all-projects {
+    position: relative;
+    width: 100vw;
+    padding: 6em 2em;
+  }
+
+  .all-projects-header {
+    margin-bottom: 3em;
+    text-align: center;
+  }
+
+  .all-projects-header p.mn {
+    margin-top: 0.75em;
+    opacity: 0.6;
+  }
+
+  .all-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    padding: 2em;
+    border-radius: 1.5em;
+    background-color: var(--bg2);
+    box-shadow: 6px 6px 0px 2px #000000;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .project-card:hover {
+    transform: translate(-2px, -4px);
+  }
+
+  .all-projects-grid .project-card:nth-child(4n+1) { background-color: var(--accent1); }
+  .all-projects-grid .project-card:nth-child(4n+2) { background-color: var(--accent2); }
+  .all-projects-grid .project-card:nth-child(4n+3) { background-color: var(--accent3); }
+  .all-projects-grid .project-card:nth-child(4n+4) { background-color: var(--bg2); }
+
+  .project-card h3 {
+    font-size: 1.75rem;
+  }
+
+  .project-card p:not(.mn) {
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+
+  .project-card .project-link {
+    margin-top: auto;
+    padding-top: 0.5em;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 1000px) {
+    .all-projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .all-projects {
+      padding: 4em 1.25em;
+    }
+
+    .all-projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* diwali offer card */
+  .diwali-offer {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    border-radius: 0 1.25em 1.25em 0;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px 2px #000000;
+    z-index: 9998;
+    display: block;
+  }
+
+  .diwali-offer img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .diwali-offer[hidden] {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    .diwali-offer {
+      width: 90px;
+    }
+  }
+
