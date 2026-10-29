@@ -320,13 +320,19 @@
     position: fixed;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(1);
     width: 200px;
     border-radius: 0 1.25em 1.25em 0;
     overflow: hidden;
     box-shadow: 6px 6px 0px 2px #000000;
     z-index: 9998;
     display: block;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .diwali-offer:hover {
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 8px 8px 0px 2px #000000;
   }
 
   .diwali-offer img {
