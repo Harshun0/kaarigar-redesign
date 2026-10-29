@@ -201,7 +201,7 @@
   .whatsapp-float {
     position: fixed;
     bottom: 24px;
-    right: 24px;
+    left: 24px;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -229,7 +229,7 @@
       width: 48px;
       height: 48px;
       bottom: 16px;
-      right: 16px;
+      left: 16px;
     }
 
     .whatsapp-float svg {
